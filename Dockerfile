@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM ubuntu:latest
 
 ENV ROMPR_VERSION=1.48 \
 ADMIN_PASSWORD=qwe123test \
