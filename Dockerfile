@@ -42,7 +42,7 @@ RUN apk add --update wget unzip bash nano tzdata mpd icecast ncmpc supervisor ng
 && chown root:root /usr/bin/mpd \
 && rm -f /etc/nginx/conf.d/default.conf \
 && mkdir -p /srv/rompr/prefs \
-&& chown -R nginx:nginx /srv
+&& chown -R nginx:nginx /srv \
 && cp -f /conf/radio.conf /config/
 
 VOLUME ["/var/lib/mpd", "/srv/rompr/prefs", "/srv/rompr/albumart"]
